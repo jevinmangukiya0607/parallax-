@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trantain</title>
+</head>
+
+<body>
+    <section>
+        <img src="img/bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="img/man.png" alt="" id="man">
+        <img src="img/clouds_1.png" alt="" id="clouds_1">
+        <img src="img/clouds_2.png" alt="" id="clouds_2">
+        <img src="img/mountain_left.png" alt="" id="mountain_left">
+        <img src="img/mountain_right.png" alt="" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Zid's Place</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repudiandae delectus laborum sequi iste!
+            Numquam cum sint earum maiores debitis magni quis deleniti, culpa accusantium? Rem eaque optio dolores
+            placeat. Consectetur numquam voluptate laudantium ad ipsa aliquam facilis, odit hic neque, cupiditate quo.
+            Pariatur, esse officia porro magni, accusamus recusandae consequuntur incidunt labore ipsum et assumenda
+            obcaecati ab tenetur veniam tempore, harum adipisci corrupti earum iure optio necessitatibus nihil sapiente.
+            <br><br> Quaerat ipsam architecto adipisci dolor natus saepe voluptates quisquam labore culpa nobis vel
+            mollitia eveniet modi doloribus, blanditiis dicta praesentium consequuntur vero velit earum, eius amet vitae
+            ducimus quo. Quo harum dicta tenetur, alias asperiores eos? Exercitationem alias quaerat totam a odit
+            dignissimos omnis beatae autem doloremque saepe incidunt, dolores, vero corrupti pariatur asperiores error
+            voluptatem magni repellat tempora aspernatur quod possimus neque? Quidem consectetur alias quo! Debitis, id
+            dolor incidunt iure culpa hic. Deserunt deleniti in iure fugit tempora sunt! Assumenda suscipit eum repellat
+            totam quidem inventore, magni repudiandae iure laudantium porro sint explicabo eius? Numquam laborum,
+            officiis dignissimos facere fugit itaque tempore dolorum nesciunt voluptatibus libero quibusdam eius
+            possimus tempora culpa eos dicta deleniti neque sed quam veritatis corrupti doloribus? Praesentium mollitia
+            reprehenderit quam rerum veritatis. Eveniet placeat assumenda consequuntur autem velit distinctio, fuga
+            eligendi inventore. Architecto, velit illo laborum doloribus repellat excepturi quas, molestias molestiae
+            quod magnam explicabo libero id exercitationem ratione labore voluptate tempore pariatur commodi sed. Est
+            dolore eius debitis esse, amet quibusdam quaerat vero asperiores assumenda dolores neque fuga consequuntur
+            dicta sapiente temporibus ex reprehenderit. Asperiores et ducimus molestiae iusto, amet sequi consectetur
+            magni, quia in omnis pariatur, impedit vero placeat libero saepe. Vitae, temporibus.
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#bg", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5
+        });
+
+        gsap.to("#man", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 0.5
+        });
+
+        gsap.to("#mountain_left", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -500
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 500
+        });
+
+        gsap.to("#text", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            y: 200
+        });
+    </script>
+</body>
+
+</html>
